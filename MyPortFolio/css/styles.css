@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: tan;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+}
+
+.h-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.h-search {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* ----トップ記事---- */
+.top-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* トップ記事：記事ごと */
+.top-posts .t-post {
+  background-color: #fff;
+  padding: 10px;
+  transition: opacity ease-in-out 1s;
+}
+
+.post-hidden {
+  height: 0;
+  width: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+/* ----最近の記事、記事ランキング---- */
+.content {
+  flex-wrap: wrap;
+}
+
+/* 最近の記事 */
+.latest-posts {
+  display: flex;
+  flex-wrap: wrap; 
+  height: auto;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.l-post {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  border: 0.5px solid grey;
+}
+
+.l-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.l-post h1 {
+  font-size: 15px;
+  color: #000;
+  margin-left: 3px;
+}
+
+.l-post p {
+  margin: 3px 3px;
+  font-size: 10px;
+  color: grey;
+}
+
+/* 記事ランキング */
+
+.r-post {
+  display: flex;
+  font-size: 10px;
+  border-bottom: 2px solid #e8e8e8;
+  padding: 10px;
+}
+
+.r-post img {
+  width: 100%;
+  height: auto;
+}
+
+.r-text {
+  margin-left: 15px;
+}
+
+.r-office {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.r-industry {
+  color: grey;
+}
+
+.r-more {
+  font-size: 14px;
+  text-align: right;
+  color: grey;
+  margin-top: 10px;
+}
+
+/* その他の記事 */
+.other-posts {
+  background-color: #fff;
+}
+
+.o-post {
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.other-posts h1 {
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.o-text {
+  font-size: 12px;
+  color: grey;
+}
+
+.o-category {
+  font-size: 12px;
+  color: grey;
+}
+
+.o-day {
+  font-size: 12px;
+  color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+
+/* メインコンテンツ */
+  .main-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ----トップ記事---- */
+  .top-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  /* トップ記事：記事ごと */
+  .t-post {
+    background-color: #fff;
+    padding: 10px;
+    transition: opacity ease-in-out 1s;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .post-hidden {
+    height: 0;
+    width: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .top-posts img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----最近の記事、記事ランキング---- */
+  .content {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  /* 最近の記事 */
+  .latest-posts {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    justify-content: center;
+  }
+
+  .l-post {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    border: 0.5px solid grey;
+  }
+
+  .l-post img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .l-post h1 {
+    font-size: 15px;
+    color: #000;
+    margin-left: 3px;
+  }
+
+  .l-post p {
+    margin: 3px 3px;
+    font-size: 10px;
+    color: grey;
+  }
+
+  /* 記事ランキング */
+  .ranking-posts {
+    width: 30%;
+    height: auto;
+  }
+
+  .r-post {
+    display: flex;
+    font-size: 10px;
+    border-bottom: 2px solid #e8e8e8;
+    padding: 10px;
+  }
+
+  .r-post img {
+    width: 100%;
+    height: auto;
+  }
+
+  .r-text {
+    margin-left: 15px;
+  }
+
+  .r-office {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .r-industry {
+    color: grey;
+  }
+
+  .r-more {
+    font-size: 14px;
+    text-align: right;
+    color: grey;
+    margin-top: 10px;
+  }
+
+  /* その他の記事 */
+  .other-posts {
+    background-color: #fff;
+  }
+
+  .o-post {
+    border-bottom: 2px solid #e8e8e8;
+  }
+
+  .other-posts h1 {
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  .o-text {
+    font-size: 12px;
+    color: grey;
+  }
+
+  .o-category {
+    font-size: 12px;
+    color: grey;
+  }
+
+  .o-day {
+    font-size: 12px;
+    color: grey;
+  }
+}
